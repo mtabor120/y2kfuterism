@@ -1,101 +1,109 @@
+/* General body styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #4b2e83;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    font-family: 'Bangers', cursive;
-    font-size: 2.5em;
-    font-weight: bold;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  .content {
-    background-color: white;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .content h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.8em;
-    color: #4b2e83;
-  }
-  
-  .content h3 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.4em;
-  }
-  
-  .content p {
-    line-height: 1.6;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-  }
-  
-  blockquote {
-    background-color: #e9d8f1;
-    padding: 10px;
-    border-left: 5px solid #4b2e83;
-    font-style: italic;
-    margin: 20px 0;
-  }
-  
-  footer {
-    background-color: #4b2e83;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  footer h3 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.6em;
-    margin-bottom: 10px;
-  }
-  
-  footer ul {
-    padding: 0;
-  }
-  
-  footer ul li {
-    font-size: 1em;
-    margin: 5px 0;
-  }
-  
-  footer ul li i {
-    font-style: normal;
-  }
-  /* Styling for the descriptions under images */
-.factor p {
-  font-size: 1.2rem; /* Adjust text size */
-  color: #ffffff; /* Light text for contrast */
-  max-width: 600px; /* Keep text width readable */
-  margin: 10px auto; /* Center text */
-  text-align: center;
-  line-height: 1.6; /* Improve readability */
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header with background image */
+header {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+/* Overlay to improve text visibility */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
+}
+
+/* Ensure the title stays visible */
+header h1 {
+  position: relative;
+  z-index: 2;
+  font-family: 'Bangers', cursive;
+  font-size: 2.8em;
+  font-weight: bold;
+}
+
+/* Content section styles */
+.content {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+}
+
+/* Section headings */
+.content h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  color: #4b2e83;
+  text-align: center;
+}
+
+/* Image styling */
+.content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 15px auto;
+}
+
+/* Blockquote styling */
+blockquote {
+  background-color: #e9d8f1;
+  padding: 15px;
+  border-left: 5px solid #4b2e83;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+/* Footer styling */
+footer {
+  background-color: #4b2e83;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* Factor section descriptions */
+.factor p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 1.6;
+}
