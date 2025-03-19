@@ -89,4 +89,13 @@ body {
   footer ul li i {
     font-style: normal;
   }
-  
+  /* Styling for the descriptions under images */
+.factor p {
+  font-size: 1.2rem; /* Adjust text size */
+  color: #ffffff; /* Light text for contrast */
+  max-width: 600px; /* Keep text width readable */
+  margin: 10px auto; /* Center text */
+  text-align: center;
+  line-height: 1.6; /* Improve readability */
+}
+
